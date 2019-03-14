@@ -17,6 +17,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="ui container" style={{marginTop: '10px'}}>
+                <h1>Picture Search</h1>
+                <p>Search for an image below by typing in your search term and hitting the enter key.</p>
                 <SearchBar onSubmit={this.onSearchSubmit} />
                 <ImageList images={this.state.images} />
             </div>
